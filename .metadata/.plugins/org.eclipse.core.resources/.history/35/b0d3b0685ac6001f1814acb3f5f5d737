@@ -1,0 +1,33 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		int A = input.nextInt();
+
+		
+		double arr[] = new double[A];
+		
+		for (int i=0; i<A; i++) {
+			arr[i] = input.nextInt();
+		}
+		
+		double max = 0;
+		for (int i=0; i<arr.length; i++) {
+			if (arr[i]>max) {
+				max = arr[i];
+			}
+		}
+		// 어디서부터 소수로 표현할지 생각하기
+		double sum = 0;
+		for (int i=0; i<arr.length; i++) {
+			arr[i] = arr[i]/max*100;
+			sum += arr[i];
+		}
+		System.out.println(sum/arr.length);
+	}
+}

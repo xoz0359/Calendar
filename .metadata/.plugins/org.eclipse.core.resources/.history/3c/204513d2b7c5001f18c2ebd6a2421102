@@ -1,0 +1,44 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		int A = input.nextInt();
+		int B = input.nextInt();
+		
+		int arr[] = new int[A];
+		int arr_2[] = new int[A];
+		
+		for (int i = 0; i < A; i++) {
+			arr[i]=i+1;
+			arr_2[i] = arr[i];
+		}
+		
+		for (int i = 0; i<B; i++) {
+			int C = input.nextInt();
+			int D = input.nextInt();
+			int k = D-1;
+			for (int j = C-1; j < D; j++) {
+				arr_2[j] = arr[k];
+				k--;
+			}
+			
+			for (int p = 0; p < A; p++) {
+				System.out.print(arr[p]+" "+arr_2[p]+" ");
+				}
+			
+			for (int p = 0; p < A; p++) {
+			arr[i] = arr_2[i];
+		
+			}
+		}
+		
+		for (int i = 0; i < A; i++) {
+			System.out.print(arr[i]);
+		}
+	}
+}

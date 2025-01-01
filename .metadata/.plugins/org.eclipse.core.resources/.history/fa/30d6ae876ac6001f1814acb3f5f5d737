@@ -1,0 +1,17 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		String s_1 = input.next();
+		int a = input.nextInt();
+		
+		System.out.println(s_1.charAt(a-1)); 
+
+		
+		
+	}
+}

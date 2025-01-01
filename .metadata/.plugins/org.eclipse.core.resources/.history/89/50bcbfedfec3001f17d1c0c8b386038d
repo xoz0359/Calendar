@@ -1,0 +1,50 @@
+package day14;
+
+import java.io.*;
+
+public class Day14_02 {
+
+	public static void main(String[] args) 
+	throws IOException{
+		// 가위 바위 보 게임 
+		System.out.println("가위 바위 보 게임! v1.1");
+		System.out.println("====================");
+		boolean win = false;
+		do {
+			System.out.println("1 가위\t2 바위\t3보자기");
+			int input = System.in.read()-'0';
+			System.in.skip(2);
+			//사용자가 입력한 값에서 컴퓨터가 지정한 값을 빼고 +2하면 인덱스형
+			int com = (int) (Math.random()*3+1);
+			String user, com_s;
+			switch(input) {
+			case 1: user = "가위"; break;
+			case 2: user = "바위"; 
+			default: user = "보자기"; 
+			}
+			switch(com) {
+			case 1: com_s = "가위"; break;
+			case 2: com_s = "바위"; 
+			default: com_s = "보자기"; 
+			}
+			
+			if ((input-com)==0) {// 비김
+				System.out.println("사용자:"+user+"\t컴퓨터:"+com_s);
+				System.out.println("비겼어요 한 번 더!");
+				win = true;
+			}else if ((input-com+2)%3==0) {// 이김
+				System.out.println("사용자:"+user+"\t컴퓨터:"+com_s);
+				System.out.println("승리!");
+				win = false;
+			}else if ((input-com+2)%3==1) {// 짐
+				System.out.println("사용자:"+user+"\t컴퓨터:"+com_s);
+				System.out.println("패배!");
+				win = false;
+			}else {
+				System.out.println("잘못입력했어요");
+				System.exit(0);
+			}
+
+		}while(win == true);
+	}
+}

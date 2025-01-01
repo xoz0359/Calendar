@@ -1,0 +1,47 @@
+package day14;
+
+import java.io.*;
+
+public class Day14_01 {
+
+	public static int[] inputArr() // 어떻게 배열을 리턴 값으로 내보내지?
+			throws IOException {
+		int arr[] = new int[5];
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("5개의 정수를 입력하세요");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(i+"번째 정수:");
+			arr[i] = Integer.parseInt(br.readLine());
+		}
+		return arr;
+	}
+
+	public static void printArr(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]);
+		}
+		System.out.println();
+	}
+
+	public static void sortArr(int arr[]) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] < arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+		// 사용자로부터 5개의 정수를 입력받아 입력받은 대로 한 번 출력하고 다시 내림차순 정렬하여 출력하는 프로그램 작성
+		int arr[] = inputArr();
+		printArr(arr);
+		sortArr(arr);
+		printArr(arr);
+
+	}
+
+}

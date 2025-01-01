@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/xoz0359/Calendar.git"/>
+		<item value="https://github.com/xoz0359/newCalendar.git"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="k8489 &lt;k8489@192.168.0.109&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="k8489 &lt;k8489@192.168.0.109&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\k8489\git\Calendar\.git">
+			<item value="false"/>
+			<item value="k8489 &lt;k8489@192.168.0.109&gt;"/>
+			<item value="오늘의 증빙 타이틀을 출력하는 프로그램입니다"/>
+			<item value="k8489 &lt;k8489@192.168.0.109&gt;"/>
+			<item value="ebcda41a6ba69f036d26e107e78d48eaec78488d"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+		<list key="C:\Users\k8489\git\newCalendar\.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.repository.CreateBranchPage$SourceSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="-144"/>
+		<item key="DIALOG_WIDTH" value="613"/>
+		<item key="DIALOG_HEIGHT" value="534"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>
