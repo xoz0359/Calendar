@@ -6,7 +6,7 @@ public class Day06_01 {
 
 	public static void main(String[] args) 
 	throws IOException{
-		//안 보고 다중 if문 만들어보기
+		//안 보고 다중 if문 만들어
 		// 다 하고 할 것
 		// 예제
 		// 두 정수 A, B가 주어졌을 때 두 수를 비교하는 프로그램을 만들어보자
