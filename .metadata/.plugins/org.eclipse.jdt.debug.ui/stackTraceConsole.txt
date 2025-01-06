@@ -1,3 +1,0 @@
-for (int n = 0; n<3; n++) {
-					System.out.println(num[1][n]);
-				}
